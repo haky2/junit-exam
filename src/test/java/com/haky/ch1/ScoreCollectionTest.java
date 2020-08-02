@@ -29,5 +29,6 @@ class ScoreCollectionTest {
 
         // assert
         assertThat(actualResult, equalTo(7));
+        System.out.println("실패하는 assert 아래는 실행되지 않는다.");
     }
 }
