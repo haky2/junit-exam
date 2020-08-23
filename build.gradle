@@ -24,11 +24,21 @@ dependencies {
   developmentOnly 'org.springframework.boot:spring-boot-devtools'
   runtimeOnly 'com.h2database:h2'
   annotationProcessor 'org.projectlombok:lombok'
-  testImplementation('org.springframework.boot:spring-boot-starter-test') {
-    exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
-  }
+//  JUnit5
+//  testImplementation('org.springframework.boot:spring-boot-starter-test') {
+//    exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+//  }
+//  JUnit4
+  testImplementation('org.springframework.boot:spring-boot-starter-test')
+//  testCompile('junit:juhnit:4.12')
 }
 
 test {
+//  JUnit5
   useJUnitPlatform()
+//  JUnit4
+//  useJUnitPlatform {
+//    includeEngines 'junit-vintage'
+//    // excludeEngines 'junit-jupiter'
+//  }
 }
