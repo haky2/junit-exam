@@ -1,6 +1,9 @@
 package com.haky.ch12;
 
-public class Criterion {
+import lombok.Getter;
 
+@Getter
+public class Criterion {
+    private Answer answer;
     public Criterion(Answer answer, Weight dontCare) {}
 }
